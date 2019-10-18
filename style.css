@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+body{
+    background: #2F343A;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+}
+header .top-line{
+    width: 100%;
+    height: 45px;
+    background-color: #C8A35F;
+    display: flex;
+    justify-content: center;
+}
+header .top-line .wrap{
+    max-width: 1110px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .top-line .wrap .language a{
+    opacity: 0.5;
+}
+header .top-line .wrap .language .active{
+    opacity: 1;
+}
+header .first-lane {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F343A;
+}
+header .first-lane .wrap{
+    max-width:1110px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .first-lane .wrap .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .first-lane .wrap .left .logo{
+    padding-right: 30px;
+    border-right: 1px solid #F2F2F2;
+    margin-right: 30px;
+}
+header .first-lane .wrap .left .office{
+    display: flex;
+    align-items: center;
+}
+header .first-lane .wrap .left .office svg{
+    padding-right: 18px;
+}
+header .first-lane .wrap .right a{
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+main .image{
+    position: relative;
+    width:100%;
+    height: calc(100vh - 145px);
+    background: linear-gradient(0deg, rgba(47, 52, 58, 0.75), rgba(47, 52, 58, 0.75)), url(truck.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .image .content {
+    border: 1px solid #C8A35F;
+    box-sizing: border-box;
+    max-width: 920px;
+    width: 100%;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: 45px;
+}
+main p {
+    max-width: 777px;
+
+    font-size: 18px;
+    text-align: center;
+
+}
+main .image svg{
+    position: absolute;
+    bottom: 50px;
+}
+main .gruz {
+    width: 100%;
+    height: 561px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .gruz .rectangle-left{
+    position: absolute;
+    width: 755px;
+    height: 561px;
+    top:0px;
+    left: 0px;
+    background: #393F47;
+}
+main .gruz .rectangle-right{
+    position: absolute;
+    width: 755px;
+    height: 561px;
+    top:0px;
+    right: 0px;
+    background: #393F47;
+}
+main .gruz .content{
+    position: relative;
+    max-width: 920px;
+    width: 100%;
+    height: 306px;
+    display: flex;
+    justify-content: space-between;
+}
+main .gruz .content-image{
+    width: 475px;
+    height: 266px;
+    background-image: url("Rectangle 4.png") ;
+    margin-left: -30px;
+}
+main .gruz .content .content-info{
+    width: 430px;
+}
+main .gruz .content .content-info h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+main .gruz .content .content-info p{
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 68px;
+    width: 410px;
+}
+main .gruz .content .content-info a{
+    background: #C8A35F;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    padding-right: 48px;
+    padding-left: 48px;
+}
+main .gruz .content .content-info svg{
+    margin-bottom: 40px;
+}
+main .gruz .content .perekluchateli{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 180px;
+
+}
+main .gruz .content .perekluchateli .top{
+    display: flex;
+
+    text-align: center;
+}
+
+main .gruz .content .perekluchateli .bottom{
+    display: flex;
+
+    text-align: center;
+}
+main .gruz .content .perekluchateli .top span{
+
+    margin-right: 31px;
+}
+main .gruz .content .perekluchateli .bottom svg{
+    margin-right: 30px;
+}
+main .services {
+    width:100%;
+    height: 744px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .services .services-content{
+    max-width: 1110px;
+    width:100%;
+    height: 504px;
+}
+main .services.all-services{
+    display: flex;
+    justify-content: space-between;
+    
+}
+main .services .all-services .service-item .circle. svg{
+    background: #2F343A;
+}
+main .services .all-services .service-item .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+}
+main .services .all-services .service-item:hover{
+    background-color: #C8A35F;
+}
+
+main .services .all-services .service-item:hover path{
+    fill: #2F343A;
+}
+main .services .all-services .service-item:hover circle{
+    fill: white;
+}
