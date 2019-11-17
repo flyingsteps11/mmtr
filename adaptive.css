@@ -1,0 +1,126 @@
+@media(max-width: 1440px) {
+    main .gruz .rectangle-left{
+        width: 605px;
+    }
+    main .gruz .rectangle-right{
+        width: 605px;
+    }
+}
+@media(max-width: 1024px){
+    header .top-line .wrap{
+        max-width: 900px;
+    }
+    header .first-lane .wrap{
+        max-width: 900px;
+    }
+    main .gruz .content{
+        max-width: 900px;
+    }
+    main .services .services-content{
+        max-width: 900px;
+    }
+    main .services .all-services .service-item{
+        width: 225px;
+    }
+    main .about-company .about-company-wrap{
+        max-width: 900px;
+    }
+    main .about-company .about-company-wrap .about-company-right .about-company-right-block:nth-child(3){
+        display: none;
+    }
+    main .about-company .about-company-wrap .about-company-right{
+        min-width: 400px;
+    }
+    main .map{
+        background-position: center;
+    }
+    footer .wrap{
+        max-width: 900px;
+    }
+    footer .wrap .addresses{
+        margin-left: 35px;
+        margin-right: 30px;
+    }
+
+    footer .wrap .addresses .street{
+        width: 291px;
+    }
+    footer .wrap .telephones{
+        padding-left: 45px;
+    }
+    footer .wrap .develop a{
+          width: 147px;
+    }}
+@media(max-width: 768px)  {
+    header .top-line .wrap{
+        max-width: 600px;
+    }
+    header .first-lane .wrap{
+        max-width: 600px;
+    }
+    header .first-lane .wrap nav{
+        display: none;
+    }
+    header .first-lane .wrap .burger-button{
+        display: flex;
+    }
+    main .gruz .content{
+        max-width: 600px;
+    }
+    main .gruz .rectangle-left{
+        width: 350px;
+    }
+    main .gruz .rectangle-right{
+        width: 350px;
+    }
+    header .first-lane .wrap .left .office{
+        display: none;
+    }
+    main .image .content{
+        border:none;
+        max-width: 600px;
+    }
+    main .image .content h1{
+        font-size:50px;
+    }
+    main .image svg{
+        display: none;
+    }
+    main .gruz .rectangle-left{
+        width: 100%;
+    }
+    main .services{
+        height: 110%;
+    }
+    main .services .services-content{
+        max-width: 600px;
+        height: 100%;
+    }
+    main .services .services-content .all-services{
+        justify-content: center;
+    }
+    main .about-company .about-company-wrap{
+        max-width: 600px;
+        flex-wrap: wrap;
+    }
+    main .about-company .about-company-wrap .about-company-left{
+        width: 300px;
+        height: auto;
+    }
+    main .about-company .about-company-wrap .about-company-right{
+        width: 300px;
+    }
+    main .about-company .about-company-wrap .about-company-left p{
+        width: inherit;
+    }
+    main .about-company{
+       margin-bottom: 150px;
+    }
+    footer .wrap{
+        max-width: 600px;
+    }
+    footer .wrap .telephones{
+        display: none;
+    }
+
+}

@@ -8,6 +8,7 @@
 }
 body{
     background: #2F343A;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -73,6 +74,9 @@ header .first-lane .wrap .right a{
     margin-left: 30px;
     text-transform: uppercase;
 }
+main{
+    transition: 0.5s ease-out;
+}
 main .image{
     position: relative;
     width:100%;
@@ -94,18 +98,16 @@ main .image .content {
     justify-content: center;
     align-items: center;
 }
-main h1{
+main .image .content h1{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 64px;
     margin-bottom: 45px;
 }
-main p {
+main .image .content p {
     max-width: 777px;
-
     font-size: 18px;
     text-align: center;
-
 }
 main .image svg{
     position: absolute;
@@ -138,11 +140,12 @@ main .gruz .rectangle-right{
 }
 main .gruz .content{
     position: relative;
-    max-width: 920px;
+    max-width: 1110px;
     width: 100%;
     height: 306px;
     display: flex;
     justify-content: space-between;
+
 }
 main .gruz .content-image{
     width: 475px;
@@ -175,30 +178,26 @@ main .gruz .content .content-info a{
 main .gruz .content .content-info svg{
     margin-bottom: 40px;
 }
-main .gruz .content .perekluchateli{
+main .gruz .content .content-switches{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     width: 180px;
-
 }
-main .gruz .content .perekluchateli .top{
+main .gruz .content .content-switches .top{
     display: flex;
-
     text-align: center;
 }
 
-main .gruz .content .perekluchateli .bottom{
+main .gruz .content .content-switches .bottom{
     display: flex;
-
     text-align: center;
 }
-main .gruz .content .perekluchateli .top span{
+main .gruz .content .content-switches .top span{
 
     margin-right: 31px;
 }
-main .gruz .content .perekluchateli .bottom svg{
+main .gruz .content .content-switches .bottom svg{
     margin-right: 30px;
 }
 main .services {
@@ -213,27 +212,286 @@ main .services .services-content{
     width:100%;
     height: 504px;
 }
-main .services.all-services{
+main .services .all-services{
     display: flex;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+    width: 100%;
 }
-main .services .all-services .service-item .circle. svg{
-    background: #2F343A;
-}
-main .services .all-services .service-item .circle{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: white;
-}
+
 main .services .all-services .service-item:hover{
     background-color: #C8A35F;
 }
+main .services .all-services .service-item{
+    width: 276px;
+    height: 180px;
+    background: #393F47;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+main .services .all-services .service-item .circle{
+    width: 70px;
+    height: 70px;
+    background: #393F47;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .services .all-services .service-item .circle:hover{
+    background: white;
+}
+main .services .all-services .service-item:hover .circle{
+     background: white;
+}
+main .services .all-services .service-item .circle .icon{
+    background: url("Vector1.png");
+    width: 30px;
+    height: 30px;
 
-main .services .all-services .service-item:hover path{
-    fill: #2F343A;
 }
-main .services .all-services .service-item:hover circle{
-    fill: white;
+main .services .all-services .service-item:hover .circle .icon{
+    background: url("Vector.png");
 }
+main .services .services-content h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+main .services .rectangle{
+    width: 90px;
+    height: 6px;
+    background: #C8A35F;
+}
+main .about-company{
+    width: 100%;
+    height: 744px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .about-company .about-company-wrap{
+    max-width: 1110px;
+    width: 100%;
+    height: 482px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .about-company .about-company-wrap .about-company-left{
+    width: 510px;
+    height: 320px;
+    margin-right: 60px;
+}
+main .about-company .about-company-wrap .about-company-right{
+    min-width: 600px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+main .about-company .about-company-wrap .about-company-left .rectangle{
+    width: 90px;
+    height: 6px;
+    background: #C8A35F;
+}
+
+main .about-company .about-company-wrap .about-company-right .about-company-right-block{
+    width: 200px;
+    height: 160px;
+    background: white;
+    border: 0.25px solid #C8A35F;
+    box-sizing: border-box;
+}
+main .about-company .about-company-wrap .about-company-right .about-company-right-block p:first-child{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2F343A;
+    margin-top: 18px;
+}
+main .about-company .about-company-wrap .about-company-right .about-company-right-block p:nth-child(2){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color:black;
+    margin-top: 4px;
+}
+main .about-company .about-company-wrap .about-company-right .about-company-right-block p:last-child{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+main .about-company .about-company-wrap .about-company-right .about-company-right-block:nth-child(3){
+    background: url("Rectangle 2.2.png");
+}
+main .about-company .about-company-wrap .about-company-right .about-company-right-block:nth-child(4){
+    background: url("Rectangle 2.2.png");
+}
+main .about-company .about-company-wrap .rectangle-mid{
+    height: 482px;
+    width: 410px;
+    background: #393F47;
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+main .about-company .about-company-wrap .about-company-left p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: left;
+    width: 445px;
+}
+main .about-company .about-company-wrap .about-company-left h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+main .map{
+    height: 450px;
+    width:100%;
+    background: url(maps.png);
+}
+footer{
+    height:161px;
+    width: 100%;
+    background: #C8A35F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-out;
+}
+footer .wrap{
+    height: 46px;
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .wrap .logo{
+}
+footer .wrap .addresses{
+    width: 291px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+footer .wrap .addresses .street{
+    font-size: 14px;
+    Opacity: 80%;
+    color:#F2F2F2;
+}
+footer .wrap .addresses .email{
+    font-size: 14px;
+    color: #2F343A;
+}
+footer .wrap .telephones{
+    width: 291px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .wrap .telephones .telephone1{
+    font-size: 14px;
+    color: #F2F2F2;
+}
+footer .wrap .telephones .telephone2{
+    font-size: 14px;
+    color: #F2F2F2;
+}
+footer .wrap .develop{
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+
+}
+footer .wrap .develop a{
+    text-decoration: underline;
+    color:#2F343A;
+}
+header .first-lane .wrap .burger-button{
+    display: none;
+    width: 46px;
+    height: 46px;
+    color: #F2F2F2;
+    cursor: pointer;
+    font-size: 46px;
+    justify-content: center;
+    align-items: center;
+}
+header .burger-menu{
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: calc(100vh - 145px);
+    z-index:2;
+    background: #2F343A;
+    border-top: 1px solid #C8A35F;
+    border-left: 1px solid #C8A35F;
+    border-bottom: 1px solid #C8A35F;
+    box-shadow: -5px 10px 10px 0px rgba(0,0,0,0.75);
+
+    transition: 0.5s ease-out;
+    right: -300px;
+    opacity: 0;
+}
+.show{
+    right: 0px !important;
+    opacity: 1!important;
+}
+.offset{
+    margin-left: -300px;
+    filter: blur(2px);
+    overflow: hidden;
+}
+.overflow{
+    overflow: hidden;
+}
+header .burger-menu .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    width: 100%;
+}
+header .burger-menu .menu a:not(.without-margin){
+    margin-bottom: 30px;
+}
+header .burger-menu .menu .office{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header .burger-menu .menu .office svg{
+    position: absolute;
+    left: -35px;
+}
+
+
+
+
